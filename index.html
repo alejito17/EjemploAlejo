@@ -35,7 +35,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,6 +52,55 @@
     .menu-link:hover {
       color: #ff69b4; /* Color rosado */
     }
+
+    /* Estilos generales para el encabezado y navegación */
+    header {
+      background-color: #f4f4f4;
+      padding: 10px 0;
+    }
+
+    .navmenu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .navmenu ul li {
+      display: inline-block;
+    }
+
+    /* Estilos para los enlaces del menú */
+    .navmenu a {
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navmenu a:hover {
+      color: #ff69b4;
+    }
+
+    /* Estilos para los iconos del menú móvil */
+    .mobile-nav-toggle {
+      display: none;
+    }
+
+    /* Diseño para pantallas pequeñas (móviles) */
+    @media (max-width: 768px) {
+      .navmenu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+        cursor: pointer;
+      }
+    }
   </style>
 </head>
 <body class="index-page">
@@ -59,10 +108,12 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">SummerLove</h1><span>.</span>
       </a>
 
+      <!-- Menú de navegación -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#about" class="menu-link">Nosotros</a></li>
@@ -79,10 +130,15 @@
 
   <main class="main">
     <!-- Aquí va el contenido principal -->
+    <section id="about">
+      <h2>Bienvenidos a SummerLove</h2>
+      <p>¡Tu esencia bajo el sol, tu estilo SummerLove! ☀️</p>
+    </section>
   </main>
 
 </body>
 </html>
+
 
 </body>
 
